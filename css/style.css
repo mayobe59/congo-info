@@ -1,0 +1,226 @@
+/*
+font-family: ta-f1blockline, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 100px;
+
+font-style: normal;
+	font-weight: 400;
+	color: #3D2E0C;
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+
+color: #F2EEE4;
+color: #3D2E0C;
+*/
+body{
+	font-family: dnp-shuei-mgothic-std, sans-serif;
+
+}
+
+
+/*
+header {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+	width: 100vw;
+	height: 940px;
+	background-repeat: no-repeat;
+	
+}
+*/
+
+header h1{
+	font-family: ta-f1blockline, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 100px;
+	color: #F2EEE4;
+	-webkit-text-stroke-width: 4px;
+	-webkit-text-stroke-color: #3D2E0C;
+	
+	text-align: center;
+	padding-top: 270px;
+	
+	background-image: url(../images/images-top/image_river_2.JPG);
+	background-size: cover;
+	height:450px;
+	width: 100vw;
+	background-size: cover;
+    
+}
+
+.navi-back{
+	background-image: url(../images/navi-back30.png);
+	background-repeat: repeat-x;
+	height: 94px;
+	width: 100vw;
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	z-index: 3;
+
+
+}
+nav ul{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+ul li {
+	display: inline-block;
+	padding: 32px ;
+}
+
+nav a{
+	text-decoration: none;
+	color: #F2EEE4;
+	font-size: 30px;
+	color: #F2EEE4;
+}
+nav a:hover{
+	color: #BC4747;
+}
+
+.africa-bar-top{
+	background-image: url(../images/african-bar.png);
+	background-size: cover;
+	background-repeat: repeat-x;
+	height: 30px;
+}
+
+.bar-and-main{
+	display: flex;
+}
+.africa-bar-left{
+	background-image: url(../images/african-bar-tate2.png);
+	height: 10000px;
+	width: 32px;
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+.africa-bar-right{
+	background-image: url(../images/african-bar-tate.png);
+	height: 10000px;
+	width: 32px;
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+
+main{
+	background-color: #F2EEE4;
+	width: 100vw;
+}
+
+#what-is-congo{
+	padding-top: 125px;
+	position: relative;
+	overflow: hidden;
+}
+#what-is-congo .dansers1{
+	width: 300px;
+	position: absolute;
+	transform: rotate(-43deg);
+	right: -90px;
+	top: -10px;
+	z-index: 0;
+	
+}
+.where-is-congo{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+
+}
+#what-is-congo .where-is-congo img{
+	width: 450px;
+	padding-right: 20px;
+}
+.where-is-congo p{
+	font-style: normal;
+	font-weight: 400;
+	color: #3D2E0C;
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+	padding-top: 125px;
+	padding-left: 20px;
+}
+.where-is-congo p span{
+	color: #BC4747;
+}
+
+
+
+
+
+
+
+
+
+
+
+#message {
+	text-align: center;
+	
+}
+#message p{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #3D2E0C;
+	padding: 100px 200px;
+	line-height: 50px;
+}
+
+#message p span{
+	color: #BC4747;
+}
+
+
+
+.sub-title img{
+	width: 55px;
+	height: 35px;
+	padding-top: 3px;	
+}
+.sub-title{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px
+}
+section h2{
+	font-family: ta-f1blockline, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #3D2E0C;
+	font-size: 70px;
+
+	text-align: center;
+}
+section h3{
+	font-style: normal;
+	font-weight: 400;
+	color: #3D2E0C;
+	font-size: 40px;
+	padding: 0 20px;
+	
+}
+.africa-bar-bottom{
+	background-image: url(../images/african-bar.png);
+	background-size: cover;
+	background-repeat: repeat-x;
+	height: 32px;
+	transform: rotate(180deg);
+}
+
+body footer{
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #3D2E0C;
+	color: #F2EEE4;
+}
