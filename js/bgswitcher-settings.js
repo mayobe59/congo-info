@@ -1,7 +1,8 @@
 jQuery(function($) {
-    $('header-none').bgSwitcher({
+    $('.bg-slider').bgSwitcher({
       images: [
-		  "./images/images-top/image_fabric.png", "./images/images-top/image_river_2.JPG", "./images/images-top/image_town_2.png", "./images/images-top/image_river_flag.png", "./images/images-top/image_river_1.png", "./images/images-top/image_town_1.png"],
+		  "./images/images-top/top-1.png", "./images/images-top/top-2.png", "./images/images-top/top-3.png","./images/images-top/top-4.png","./images/images-top/top-5.png",
+	  ],
       interval: 7000,
     });
 });

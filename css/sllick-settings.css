@@ -1,0 +1,6 @@
+
+/*slick setting*/
+#scenery .slick-prev:before,
+#scenery .slick-next:before {
+    color: #d54747;
+}

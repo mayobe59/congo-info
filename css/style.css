@@ -13,26 +13,36 @@ font-style: normal;
 
 color: #F2EEE4;
 color: #3D2E0C;
+color: #d54747;
 */
+* {
+min-height:0;
+min-width : 0;
+}
+
+
 body{
 	font-family: dnp-shuei-mgothic-std, sans-serif;
-
+	color: #3D2E0C;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+.red{
+	color: #d54747;
 }
 
 
-/*
-header {
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+
+.bg-slider {
 	width: 100vw;
-	height: 940px;
-	background-repeat: no-repeat;
-	
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-*/
-
-header h1{
+.bg-slider__title{
 	font-family: ta-f1blockline, sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -42,14 +52,6 @@ header h1{
 	-webkit-text-stroke-color: #3D2E0C;
 	
 	text-align: center;
-	padding-top: 270px;
-	
-	background-image: url(../images/images-top/image_river_2.JPG);
-	background-size: cover;
-	height:450px;
-	width: 100vw;
-	background-size: cover;
-    
 }
 
 .navi-back{
@@ -61,19 +63,18 @@ header h1{
   	top: 0;
   	left: 0;
   	z-index: 3;
-
-
 }
+
 nav ul{
 	position: absolute;
 	text-align: center;
-	width: 100%;
+	width: 100vw;
 }
-ul li {
+
+nav ul li {
 	display: inline-block;
 	padding: 32px ;
 }
-
 nav a{
 	text-decoration: none;
 	color: #F2EEE4;
@@ -89,21 +90,23 @@ nav a:hover{
 	background-size: cover;
 	background-repeat: repeat-x;
 	height: 30px;
+	width: 100vw;
 }
 
 .bar-and-main{
 	display: flex;
+	width: 100vw;
 }
-.africa-bar-left{
+body .africa-bar-left{
 	background-image: url(../images/african-bar-tate2.png);
-	height: 10000px;
+	height: 10896px;
 	width: 32px;
 	background-repeat: repeat-y;
 	z-index: 2;
 }
-.africa-bar-right{
+body .africa-bar-right{
 	background-image: url(../images/african-bar-tate.png);
-	height: 10000px;
+	height: 10896px;
 	width: 32px;
 	background-repeat: repeat-y;
 	z-index: 2;
@@ -131,7 +134,7 @@ main{
 .where-is-congo{
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-bottom: 100px;
 
 }
@@ -150,36 +153,365 @@ main{
 	padding-left: 20px;
 }
 .where-is-congo p span{
-	color: #BC4747;
+	color: #d54747;
+}
+
+.environment-container{
+	height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	padding-bottom: 130px;
+}
+.environment-info{
+	margin: 0px 55px;
+}
+.environment-image img{
+	height: 200px;
+    margin: 0 auto;
+}
+.environment-container p{
+	text-align: center;
+	font-size: 20px;
+}
+
+.human-container{
+	height: auto;
+    display: flex;
+    justify-content: center;
+	padding-bottom: 130px;
+	padding-left: 50px;
+	align-items:center;
+	
+	font-size: 30px;
+}
+.human-container .human-text-left{
+	margin-right: 50px;
+	text-align: right;
+}
+.human-container .human-text-left p span{
+	color: #d54747;
+}
+.human-container img{
+	height: 330px;	
+}
+.human-container .human-text-right{
+	margin-left: 50px;
+}
+.human-container .human-text-right .small{
+	font-size: 20px;
+}
+.human-container .text-1{
+	transform: rotate(15deg);
+	transform-origin: right bottom;
+	margin-bottom: 50px;
+}
+.human-container .text-3{
+	transform: rotate(-15deg);
+	transform-origin: right top;
+	margin-top: 50px;
+	
+}
+.human-container .text-4{
+	transform: rotate(-15deg);
+	transform-origin: bottom left;
+	margin-bottom: 50px;
+}
+.human-container .text-5{
+	transform: rotate(15deg);
+	transform-origin: top left;
+	margin-top: 50px;
+}
+
+.industry-container{
+	height: auto;
+    display: flex;
+    justify-content: center;
+	align-items:center;
+	
+}
+.industry-container img{
+	width: 400px;
+	margin-right: 25px;
+}
+.industry-container .industry-info{
+	width: 475px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 40px;
+	margin-left: 25px;
+}
+.industry-info .industy-text-top{
+	margin-bottom: 50px;
+	
+}
+
+#culture{
+	position: relative;
+	overflow: hidden;
+	padding-top: 400px;
+}
+#culture .dansers2{
+	width: 350px;
+	position: absolute;
+	transform: rotate(40deg);
+	left: -55px;
+	top: -10px;
+	z-index: 0;	
+}
+
+.food-container1{
+	text-align: center;
+}
+.food1{
+	height: 500px;
+}
+.food-container1 p{
+	font-size: 30px;
+	padding: 30px 0 10px 0;
+}
+.food-container2{
+	height: auto;
+    display: flex;
+    justify-content: center;
+	align-items:center;
+	padding: 0 100px;
+	flex-wrap: wrap;
+	margin-bottom: 130px;
+}
+.food-info{
+	height: 200px;
+	margin: 0 10px 20px 10px;
+}
+
+#culture .fuku-text{
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.fuku-container1{
+	height: auto;
+    display: flex;
+    justify-content: center;
+	align-items:center;
+}
+.fuku-container2{
+	height: auto;
+    display: flex;
+    justify-content: center;
+	align-items:center;
+	padding-bottom: 130px;
+}
+.fuku-info{
+	height: 280px;
+	padding: 0 5px 10px 5px;
+	
+}
+
+#culture .dance-text{
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 30px;
+	
+}
+#culture .movie{
+	text-align: center;
 }
 
 
+#scenery{
+	position: relative;
+	overflow: hidden;
+	padding-top: 400px;
+}
+#scenery .dansers3{
+	width: 450px;
+	position: absolute;
+	transform: rotate(-56deg);
+	right: -150px;
+	top: 70px;
+	z-index: 0;
+}
 
 
+.slider{
+    margin: 0 auto;
+    width: 60%;
+	padding: 0 20px 0 20px;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+.samnails{
+    margin: 0 auto 130px auto;
+    width: 70%;
+}
+.samnails div{
+	margin: 1px;
+}
+.samnails img{
+    height: auto;
+    width: 100%;
+}
 
+.scenery-omosiro-text{
+	text-align: center;
+	font-size: 30px;
+}
+.omoshiro-container{
+	height: auto;
+    display: flex;
+    justify-content: center;
+	align-items:center;
+	padding: 0 100px;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+.omoshiro-container img{
+	height: 220px;
+	margin: 40px;
+}
+.omoshiro-container .atama2, .car1, .car3, .jp2 {
+	transform: rotate(10deg);
+}
+.atama1,.atama3 ,.car2, .jp1,
+.jp3{
+	transform: rotate(-10deg);
+}
 
+.safety-title{
+	display: flex;
+	justify-content: center;
+	padding-top: 220px;
+	align-items:flex-end;
+}
+#safety .dansers4{
+	height: 150px;
+	left: 10px;
+	top: 298px;
+	padding-bottom: 50px;
+}
+#safety .dansers5{
+	height: 130px;
+	right: 100px;
+	top: 360px;
+	padding-bottom: 50px;
+}
 
+.safety-container1{
+	height: auto;
+    display: flex;
+    justify-content: center;
+	align-items:center;
+	padding-bottom: 90px;
+}
+.safety-container1 img{
+	width: 350px;
+	margin-right: 25px;
+}
+.safety-container1 p{
+	width: 450px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 50px;
+	margin-left: 25px;
+}
+
+.safety-risk{
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+.safety-container2{
+	height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	padding-bottom: 130px;
+}
+.safety-info{
+	margin: 0px 55px;
+}
+.safety-info img{
+	height: 200px;
+    margin: 0 auto;
+}
+.safety-container2 p{
+	text-align: center;
+	font-size: 20px;
+}
+
+.kansen-text-1{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #3D2E0C;
+	padding: 0px 200px 50px 200px;
+	line-height: 50px;
+	text-align: center;
+}
+.kansen-text-2{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #3D2E0C;
+	padding: 0px 200px;
+	line-height: 50px;
+	text-align: center;
+}
 
 
 
 
 #message {
 	text-align: center;
-	
+	position: relative;
+	overflow: hidden;
+	padding-top: 400px;
+	margin-bottom: 280px;
+}
+#message .dansers2{
+	width: 300px;
+	position: absolute;
+	transform: rotate(40deg);
+	left: -90px;
+	top: 150px;
+	z-index: 0;	
+}
+#message .dansers3{
+	width: 350px;
+	position: absolute;
+	transform: rotate(-56deg);
+	right: -150px;
+	top: 250px;
+	z-index: 0;
 }
 #message p{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 30px;
 	color: #3D2E0C;
-	padding: 100px 200px;
+	padding: 10px 200px 30px 200px;
 	line-height: 50px;
 }
 
-#message p span{
-	color: #BC4747;
+.dansers-last{
+	text-align: center;
+	position: relative;
 }
-
+.dansers-last img{
+	width: 350px;
+	position: absolute;
+	top: -280px;
+	left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
 
 
 .sub-title img{
@@ -190,7 +522,8 @@ main{
 .sub-title{
 	display: flex;
 	justify-content: center;
-	padding-bottom: 40px
+	padding-bottom: 40px;
+	font-weight: 700;
 }
 section h2{
 	font-family: ta-f1blockline, sans-serif;
@@ -198,6 +531,7 @@ section h2{
 	font-weight: 400;
 	color: #3D2E0C;
 	font-size: 70px;
+	padding-bottom: 50px;
 
 	text-align: center;
 }
