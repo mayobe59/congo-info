@@ -31,8 +31,6 @@ body{
 	color: #d54747;
 }
 
-
-
 .bg-slider {
 	width: 100vw;
 	height: 100vh;
@@ -103,6 +101,7 @@ body .africa-bar-left{
 	width: 32px;
 	background-repeat: repeat-y;
 	z-index: 2;
+	overflow: hidden;
 }
 body .africa-bar-right{
 	background-image: url(../images/african-bar-tate.png);
@@ -121,6 +120,7 @@ main{
 	padding-top: 125px;
 	position: relative;
 	overflow: hidden;
+	
 }
 #what-is-congo .dansers1{
 	width: 300px;
@@ -148,7 +148,7 @@ main{
 	color: #3D2E0C;
 	font-size: 30px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 60px;
 	padding-top: 125px;
 	padding-left: 20px;
 }
@@ -472,7 +472,7 @@ main{
 	position: relative;
 	overflow: hidden;
 	padding-top: 400px;
-	margin-bottom: 280px;
+	margin-bottom: 10px;
 }
 #message .dansers2{
 	width: 300px;
@@ -501,16 +501,10 @@ main{
 
 .dansers-last{
 	text-align: center;
-	position: relative;
 }
 .dansers-last img{
 	width: 350px;
-	position: absolute;
-	top: -280px;
-	left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+	
 }
 
 
@@ -532,7 +526,8 @@ section h2{
 	color: #3D2E0C;
 	font-size: 70px;
 	padding-bottom: 50px;
-
+	z-index: 2;
+	position: relative;
 	text-align: center;
 }
 section h3{
